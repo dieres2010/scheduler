@@ -81,10 +81,12 @@ var loadTasks = function() {
         };
  
     } else {
+        var i =0;
         // then loop over sub-array
         $.each(tasks, function() {
-            
-            createTasks(tasks.Hr, tasks.HrText, tasks.Text);
+            console.log(tasks)
+            createTasks(i,tasks[i].Hr, tasks[i].HrText, tasks[i].Text);
+            i++;
         });
 
     };
